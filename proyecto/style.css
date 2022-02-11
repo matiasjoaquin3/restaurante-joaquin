@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Dosis', sans-serif;         
+}
+.body-home{
+    height: 100vh;
+}
+.grid-container{
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 64px 1fr 64px;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: 
+    "header header header header header header"
+    "main main main main main main"
+    "footer footer footer footer footer footer";
+}
+.header-area{
+    grid-area: header;
+}
+.main-area{
+    grid-area: main;
+}
+.footer-area{
+    grid-area: footer;
+}
+.header{
+    background-color:rgb(228, 218, 255);
+    width: 100%;
+    height: 100%;
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.nav-enlace{    
+    padding: 1%;
+    margin: 0% 2%;
+    color: rgb(0, 0, 0);    
+    font-size: 130%;
+    text-decoration: none;
+    text-align: center;
+}
+.nav-enlace.active{
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+.nav-titina{
+    margin: 0% 2%;
+    padding: 1% 5%;
+    color: rgb(0, 0, 0);    
+    font-size: 160%;
+    text-decoration: none;
+    font-weight: bold; 
+}
+.nav-mobile{
+    display: none;
+}
+h1{
+    font-weight: bold; 
+    text-align: center;    
+}
+.titina-foot{
+    font-weight: bold;
+    font-size: 150%
+}
+.main{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.section-home{
+    width: 100%;
+}
+.div-bienvenidos{
+    font-size: 20px;
+    position: relative;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+}
+.img-home{
+    width: 86%;
+    height: 77vh;
+    object-fit: cover;
+}
+.texto-home{
+    display: grid;
+    position: absolute;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.748);
+    height: 60%;
+    width: 60%;
+    text-shadow: 0 0 black;
+    align-content: space-evenly;
+}
+.p-home{
+    line-height: 1.5;
+    padding: 10px;
+    text-align: center;
+}
+.footer{
+    background-color:rgb(228, 218, 255);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}.nav-footer{
+    margin-left: 80px;
+}
+.nav-icon{
+    margin: 10px
+}
+/* Acá comienza "Menu" */
+
+.menu-container{
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.h1-menu{
+    background-color: rgb(228, 218, 255);
+    width: 90%;
+    margin-top: 20px;
+    padding: 5px;
+}
+.h3-menu{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.img-menu{
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 5px 5px 5px #7f7f7f;
+}
+.div-entradas{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(228, 218, 255);
+    padding: 20px;
+    margin: 20px;
+}
+.entradas-menu{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.div-principales{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(228, 218, 255);
+    padding: 20px;
+    margin: 20px;
+}
+.principales-menu{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.div-postres{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(228, 218, 255);
+    padding: 20px;
+    margin: 20px;
+}
+.postres-menu{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.div-bebidas{
+    background-color: rgb(228, 218, 255);
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 0 0 black;
+}
+
+/* Acá comienza "Galeria" */
+
+.galeria-container{
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.h1-galeria{
+    background-color: rgb(228, 218, 255);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    width: 90%;
+}
+
+.div-galeria{
+    background-color: rgb(228, 218, 255);
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3%;
+    margin: 20px;
+    justify-items: center;
+}
+.img-galeria{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 5px 5px 5px #7f7f7f;
+    margin: 2%;
+}
+
+/* Acá comienza "Contactos" */
+
+.contactanos{
+    display: grid;
+    justify-items: center;
+    height: 100%;
+    width: 100%;
+}
+.section-contacto{
+    width: 100%;
+    font-size: 20px;
+    margin: 3%;
+}
+.div-contacto{
+    position: relative;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+}
+.img-contacto{
+    width: 86%;
+    height: 77vh;
+    object-fit: cover;
+    object-position: top;
+}
+.div-formulario{
+    display: grid;
+    position: absolute;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.748);
+    height: 60%;
+    width: 60%;
+    text-shadow: 0 0 black;
+    align-content: space-evenly;
+    justify-content: center;
+}
+.formulario{
+    display: grid;
+    justify-items: end;
+}
+.section-llegar{
+    display: grid;
+    padding: 2%;
+    width: 86%;
+    background-color: rgb(228, 218, 255);
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 3%;
+    align-items: center;
+}
+.direccion{
+    margin-top: 20px;
+}
+.map{
+    border: 0;
+    box-shadow: 5px 5px 5px #7f7f7f;
+    width: 70%;
+    height: 50vh;
+    margin: 2%;
+}
+
+/* Acá comienza "Reservas" */
+
+.body-reservas{
+    height: 100vh;
+}
+.section-reservas{
+    width: 100%;
+    font-size: 23px;
+    text-align: center;
+}
+.div-reservas{
+    position: relative;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+}
+.img-reservas{
+    width: 86%;
+    height: 77vh;
+    object-fit: cover;
+}
+.div-form{
+    display: grid;
+    position: absolute;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.748);
+    height: 60%;
+    width: 60%;
+    text-shadow: 0 0 black;
+    align-content: space-evenly;
+}
+
+
+@media only screen and (max-width: 820px){
+    /* TABLET */
+
+    /* Galeria */
+
+    .div-galeria{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+    .img-galeria--7{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    /* MOBILE */
+    #hamburger{
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+    .nav-mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .header .nav-enlace{
+        text-align: right;
+        width: 30%;
+    }
+    .nav > .nav-titina{
+        display: none;
+    }
+    .nav{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .grid-container{
+        grid-template-rows: auto 1fr 64px;
+    }
+    .main{
+        margin: 20px 0;
+    }
+
+    /* Home */
+    .div-bienvenidos{
+        font-size: 13px;
+    }
+
+    /* Menu */
+    .img-menu{
+        display: none;
+    }
+    .div-entradas{
+        justify-content: center;
+    }
+    .div-principales{
+        justify-content: center;
+    }
+    .div-postres{
+        justify-content: center;
+    }
+    .h2-menu{
+        text-decoration: underline;
+    }
+    .menu-container{
+        text-align: center;
+    }
+
+    /* Galeria */
+    .div-galeria{
+        grid-template-columns: 1fr;
+    }
+
+    /* Contacto */
+    .section-contacto{
+        font-size: 15px;
+    }
+
+    /* Reservas */
+    .section-reservas{
+        font-size: 13px;
+    }
+
+
+}
