@@ -58,7 +58,7 @@
 .nav-enlace {
     font-family: 'Bebas Neue';
     color: rgb(255, 255, 255);
-    font-size: 130%;
+    font-size: 160%;
     text-decoration: none;
     text-align: center;
     transition: all 0.5s ease-out;
@@ -78,7 +78,7 @@
 
 .nav-titina {
     color: #ffffff;
-    font-size: 160%;
+    font-size: 200%;
     text-decoration: none;
     font-weight: bold;
     letter-spacing: 1.5px;
@@ -179,9 +179,13 @@ h1 {
 .nav-enlace--color{
     color: #825b16;
     text-shadow: 0px 0px 0px;
+    margin-left: 2%;
 }
-.nav-footer {
-    margin-left: 80px;
+
+.div-footer{
+    width: 33.33%;
+    text-align: center;
+
 }
 
 .nav-icon {
@@ -451,9 +455,17 @@ h1 {
     .nav-titina{
         margin: 0%;
     }
+    
+    .navbar-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-    .enlace-footer {
-        flex-wrap: nowrap;
+    .div-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     /* Galeria */
@@ -500,12 +512,25 @@ h1 {
         margin: 0%;
     }
 
+    .navbar-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .main {
         margin: 20px 0;
     }
 
     .enlace-footer {
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        font-size: 70%;
     }
 
     .nav-icon {
