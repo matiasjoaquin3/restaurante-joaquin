@@ -57,22 +57,26 @@
 
 .nav-enlace {
     font-family: 'Bebas Neue';
-    margin: 1% 2%;
     color: rgb(255, 255, 255);
     font-size: 130%;
     text-decoration: none;
     text-align: center;
     transition: all 0.5s ease-out;
     text-shadow: 1px 1px 3px black;
+    letter-spacing: 0.5px;
 }
 
+.navbar-brand{
+    font-family: 'Bebas Neue';
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 3px black;
+}
 .nav-enlace.active {
     text-decoration: underline;
 }
 
 .nav-titina {
-    margin: 6% 2%;
-    padding: 1% 5%;
     color: #ffffff;
     font-size: 160%;
     text-decoration: none;
@@ -84,13 +88,19 @@
 .nav-enlace:focus {
     text-decoration: underline;
     text-decoration-color: #825b16;
-    font-size: 140%;
+    font-size: 170%;
     color: #825b16;
 }
 
 .navbar-nav{
     justify-content: space-evenly;
     width: 100%;
+}
+
+.div-nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 33.33%;
 }
 
 h1 {
