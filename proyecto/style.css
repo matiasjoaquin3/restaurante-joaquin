@@ -40,8 +40,8 @@
     background-color: #FFCE75;
     width: 100%;
     height: 100%;
-    /* display: grid;
-    justify-content: center; */
+    position: sticky;
+    top: 0;
 }
 
 .nav {
@@ -125,7 +125,7 @@ h1 {
     align-items: center;
     width: 100%;
     height: 100%;
-    background-color: #f5efe5;
+    background-image: linear-gradient(to bottom, #f5efe5, #f8e9d0, #fae3bb, #fcdda6, #fed791, #f3d88c, #e7d888, #dad986, #c2de9a, #b1e0b0, #a8e0c3, #aaded2);
 }
 
 .section-home {
@@ -151,7 +151,7 @@ h1 {
     display: grid;
     position: absolute;
     padding: 2%;
-    background-color: rgba(255, 255, 255, 0.748);
+    background-color: #ffffffbf;
     box-shadow: 5px 5px 10px #7f7f7f;
     height: 65%;
     width: 60%;
@@ -173,7 +173,7 @@ h1 {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    border-top: 3px solid #FFCE75;
+    border-top: 2px solid #825b16;
 }
 
 .nav-enlace--color{
@@ -204,10 +204,12 @@ h1 {
 }
 
 .h1-menu {
-    background-color: #9ACE73;
+    background-color: #ffffffbf;
+    box-shadow: 5px 5px 10px #7f7f7f;
     width: 90%;
     margin-top: 20px;
     padding: 5px;
+    font-weight: normal;
 }
 
 .h3-menu {
@@ -228,7 +230,8 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #9ACE73;
+    background-color: #ffffffbf;
+    box-shadow: 5px 5px 10px #7f7f7f;
     padding: 20px;
     margin: 20px;
 }
@@ -243,7 +246,8 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #9ACE73;
+    background-color: #ffffffbf;
+    box-shadow: 5px 5px 10px #7f7f7f;
     padding: 20px;
     margin: 20px;
 }
@@ -258,7 +262,8 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #9ACE73;
+    background-color: #ffffffbf;
+    box-shadow: 5px 5px 10px #7f7f7f;
     padding: 20px;
     margin: 20px;
 }
@@ -269,13 +274,18 @@ h1 {
 }
 
 .div-bebidas {
-    background-color: #9ACE73;
+    background-color: #ffffffbf;
+    box-shadow: 5px 5px 10px #7f7f7f;
     width: 90%;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     padding: 10px;
     text-align: center;
     text-shadow: 0 0 black;
+}
+
+.p-menu{
+    margin-bottom: 0;
 }
 
 /* Acá comienza "Galeria" */
@@ -290,15 +300,18 @@ h1 {
 }
 
 .h1-galeria {
-    background-color: rgb(228, 218, 255);
+    background-color: #ffffffbf;
+    box-shadow: 5px 5px 10px #7f7f7f;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 5px;
     width: 90%;
+    font-weight: normal;
 }
 
 .div-galeria {
-    background-color: rgb(228, 218, 255);
+    background-color: #ffffffbf;
+    box-shadow: 5px 5px 10px #7f7f7f;
     width: 90%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -350,7 +363,8 @@ h1 {
     display: grid;
     position: absolute;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.748);
+    background-color: #ffffffbf;
+    box-shadow: 5px 5px 10px #7f7f7f;
     height: 60%;
     width: 60%;
     text-shadow: 0 0 black;
@@ -367,7 +381,8 @@ h1 {
     display: grid;
     padding: 2%;
     width: 86%;
-    background-color: rgb(228, 218, 255);
+    background-color: #ffffffbf;
+    box-shadow: 5px 5px 10px #7f7f7f;
     font-size: 20px;
     text-align: center;
     margin-bottom: 3%;
@@ -416,7 +431,8 @@ h1 {
     display: grid;
     position: absolute;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.748);
+    background-color: #ffffffcd;
+    box-shadow: 5px 5px 10px #7f7f7f;
     height: 60%;
     width: 60%;
     text-shadow: 0 0 black;
