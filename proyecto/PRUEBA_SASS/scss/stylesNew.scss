@@ -103,24 +103,24 @@
     .div-footer{
         width: 33.33%;
         text-align: center;
-        .titina-foot {
-            font-weight: bold;
-            font-size: 150%;
-            font-family: 'Bebas Neue';
+    }
+    .titina-foot {
+        font-weight: bold;
+        font-size: 150%;
+        font-family: 'Bebas Neue';
+        color: #825b16;
+        margin-bottom: 0;
+        letter-spacing: 0.5px;
+    }
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+        .nav-enlace--color{
             color: #825b16;
-            margin-bottom: 0;
-            letter-spacing: 0.5px;
-        }
-        .nav {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            flex-wrap: nowrap;
-            .nav-enlace--color{
-                color: #825b16;
-                text-shadow: 0px 0px 0px;
-                margin-left: 2%;
-            }
+            text-shadow: 0px 0px 0px;
+            margin-left: 2%;
         }
     }
 }
@@ -187,15 +187,76 @@
     display: grid;
     justify-items: center;
     align-items: center;
+    .h1-menu {
+        background-color: #ffffffbf;
+        box-shadow: 5px 5px 10px #7f7f7f;
+        width: 90%;
+        margin-top: 20px;
+        padding: 5px;
+        font-weight: normal;
+    }
 }
 
-.h1-menu {
+.div-entradas {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffffffbf;
+    box-shadow: 5px 5px 10px #7f7f7f;
+    padding: 20px;
+    margin: 20px;
+    .entradas-menu {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+.div-principales {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffffffbf;
+    box-shadow: 5px 5px 10px #7f7f7f;
+    padding: 20px;
+    margin: 20px;
+    .principales-menu {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+.div-postres {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffffffbf;
+    box-shadow: 5px 5px 10px #7f7f7f;
+    padding: 20px;
+    margin: 20px;
+    .postres-menu {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+
+.div-bebidas {
     background-color: #ffffffbf;
     box-shadow: 5px 5px 10px #7f7f7f;
     width: 90%;
     margin-top: 20px;
-    padding: 5px;
-    font-weight: normal;
+    margin-bottom: 30px;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 0 0 black;
+    .p-menu{
+        margin-bottom: 0;
+    }
 }
 
 .h3-menu {
@@ -211,68 +272,6 @@
     box-shadow: 5px 5px 5px #7f7f7f;
 }
 
-.div-entradas {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #ffffffbf;
-    box-shadow: 5px 5px 10px #7f7f7f;
-    padding: 20px;
-    margin: 20px;
-}
-
-.entradas-menu {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.div-principales {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #ffffffbf;
-    box-shadow: 5px 5px 10px #7f7f7f;
-    padding: 20px;
-    margin: 20px;
-}
-
-.principales-menu {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.div-postres {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #ffffffbf;
-    box-shadow: 5px 5px 10px #7f7f7f;
-    padding: 20px;
-    margin: 20px;
-}
-
-.postres-menu {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.div-bebidas {
-    background-color: #ffffffbf;
-    box-shadow: 5px 5px 10px #7f7f7f;
-    width: 90%;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    padding: 10px;
-    text-align: center;
-    text-shadow: 0 0 black;
-}
-
-.p-menu{
-    margin-bottom: 0;
-}
 
 /* Acá comienza "Galeria" */
 
@@ -283,18 +282,16 @@
     display: grid;
     justify-items: center;
     align-items: center;
+    .h1-galeria {
+        background-color: #ffffffbf;
+        box-shadow: 5px 5px 10px #7f7f7f;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 5px;
+        width: 90%;
+        font-weight: normal;
+    }
 }
-
-.h1-galeria {
-    background-color: #ffffffbf;
-    box-shadow: 5px 5px 10px #7f7f7f;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 5px;
-    width: 90%;
-    font-weight: normal;
-}
-
 .div-galeria {
     background-color: #ffffffbf;
     box-shadow: 5px 5px 10px #7f7f7f;
@@ -308,35 +305,34 @@
         "img1 img2 img3"
         "img4 img5 img6"
         "img7 img8 img9";
+        .img1 {
+            grid-area: img1;
+        }
+        .img2 {
+            grid-area: img2;
+        }
+        .img3 {
+            grid-area: img3;
+        }
+        .img4 {
+            grid-area: img4;
+        }
+        .img5 {
+            grid-area: img5;
+        }
+        .img6 {
+            grid-area: img6;
+        }
+        .img7 {
+            grid-area: img7;
+        }
+        .img8 {
+            grid-area: img8;
+        }
+        .img8 {
+            grid-area: img9;
+        }
 }
-.img1 {
-    grid-area: img1;
-}
-.img2 {
-    grid-area: img2;
-}
-.img3 {
-    grid-area: img3;
-}
-.img4 {
-    grid-area: img4;
-}
-.img5 {
-    grid-area: img5;
-}
-.img6 {
-    grid-area: img6;
-}
-.img7 {
-    grid-area: img7;
-}
-.img8 {
-    grid-area: img8;
-}
-.img8 {
-    grid-area: img9;
-}
-
 .img-galeria {
     width: 300px;
     height: 300px;
@@ -346,6 +342,7 @@
     margin: 2%;
 }
 
+
 /* Acá comienza "Contactos" */
 
 .contactanos {
@@ -354,45 +351,42 @@
     height: 100%;
     width: 100%;
 }
-
 .section-contacto {
     width: 100%;
     font-size: 20px;
     margin: 3%;
+    .div-contacto {
+        position: relative;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        .img-contacto {
+            width: 86%;
+            height: 77vh;
+            object-fit: cover;
+            object-position: top;
+        }
+        .div-formulario {
+            display: grid;
+            position: absolute;
+            padding: 10px;
+            background-color: #ffffffbf;
+            box-shadow: 5px 5px 10px #7f7f7f;
+            height: 60%;
+            width: 60%;
+            text-shadow: 0 0 black;
+            align-content: space-evenly;
+            justify-content: center;
+            .formulario {
+                display: grid;
+                justify-items: end;
+            }
+        }
+    }
 }
 
-.div-contacto {
-    position: relative;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    width: 100%;
-}
 
-.img-contacto {
-    width: 86%;
-    height: 77vh;
-    object-fit: cover;
-    object-position: top;
-}
-
-.div-formulario {
-    display: grid;
-    position: absolute;
-    padding: 10px;
-    background-color: #ffffffbf;
-    box-shadow: 5px 5px 10px #7f7f7f;
-    height: 60%;
-    width: 60%;
-    text-shadow: 0 0 black;
-    align-content: space-evenly;
-    justify-content: center;
-}
-
-.formulario {
-    display: grid;
-    justify-items: end;
-}
 
 .section-llegar {
     display: grid;
@@ -404,18 +398,16 @@
     text-align: center;
     margin-bottom: 3%;
     align-items: center;
-}
-
-.direccion {
-    margin-top: 20px;
-}
-
-.map {
-    border: 0;
-    box-shadow: 5px 5px 5px #7f7f7f;
-    width: 70%;
-    height: 50vh;
-    margin: 2%;
+    .direccion {
+        margin-top: 20px;
+    }
+    .map {
+        border: 0;
+        box-shadow: 5px 5px 5px #7f7f7f;
+        width: 70%;
+        height: 50vh;
+        margin: 2%;
+    }
 }
 
 /* Acá comienza "Reservas" */
@@ -428,33 +420,32 @@
     width: 100%;
     font-size: 23px;
     text-align: center;
+    .div-reservas {
+        position: relative;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        .img-reservas {
+            width: 86%;
+            height: 77vh;
+            object-fit: cover;
+        }
+        
+        .div-form {
+            display: grid;
+            position: absolute;
+            padding: 10px;
+            background-color: #ffffffcd;
+            box-shadow: 5px 5px 10px #7f7f7f;
+            height: 60%;
+            width: 60%;
+            text-shadow: 0 0 black;
+            align-content: space-evenly;
+        }
+    }
 }
 
-.div-reservas {
-    position: relative;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    width: 100%;
-}
-
-.img-reservas {
-    width: 86%;
-    height: 77vh;
-    object-fit: cover;
-}
-
-.div-form {
-    display: grid;
-    position: absolute;
-    padding: 10px;
-    background-color: #ffffffcd;
-    box-shadow: 5px 5px 10px #7f7f7f;
-    height: 60%;
-    width: 60%;
-    text-shadow: 0 0 black;
-    align-content: space-evenly;
-}
 
 
 @media only screen and (min-width: 576px) and (max-width: 970px) {
