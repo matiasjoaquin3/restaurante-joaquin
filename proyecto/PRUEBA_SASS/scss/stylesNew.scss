@@ -1,3 +1,5 @@
+@import "variables";
+
 * {
     margin: 0;
     padding: 0;
@@ -31,7 +33,7 @@
         }        
 }
 .header {
-    background-color: #ffce75c7;
+    background-color: $colorHeader;
     width: 100%;
     height: 100%;
     position: sticky;
@@ -49,7 +51,7 @@
         }
     }
     .nav-titina {
-        color: #ffffff;
+        color: $colorNavsHeader;
         font-size: 200%;
         text-decoration: none;
         font-weight: bold;
@@ -60,7 +62,7 @@
         font-family: 'Bebas Neue';
         font-weight: bold;
         letter-spacing: 1.5px;
-        text-shadow: 1px 1px 3px black;
+        text-shadow: $shadowNavHeader;
     }
 }
 .logo-mobile {
@@ -68,12 +70,12 @@
 }
 .nav-enlace {
     font-family: 'Bebas Neue';
-    color: rgb(255, 255, 255);
+    color: $colorNavsHeader;
     font-size: 160%;
     text-decoration: none;
     text-align: center;
     transition: all 0.5s ease-out;
-    text-shadow: 1px 1px 3px black;
+    text-shadow: $shadowNavHeader;
     letter-spacing: 0.5px;
     .nav-enlace.active {
         text-decoration: underline;
@@ -81,20 +83,20 @@
     &:hover,
     &:focus {
         text-decoration: underline;
-        text-decoration-color: #825b16;
+        text-decoration-color: $colorItemsFooter;
         font-size: 170%;
-        color: #825b16;
+        color: $colorItemsFooter;
     }
 }
 .footer {
-    background-color: #AADED2;
+    background-color: $colorFooter;
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    border-top: 2px solid #825b16;
+    border-top: 2px solid $colorItemsFooter;
     .div-footer{
         width: 33.33%;
         text-align: center;
@@ -103,7 +105,7 @@
         font-weight: bold;
         font-size: 150%;
         font-family: 'Bebas Neue';
-        color: #825b16;
+        color: $colorItemsFooter;
         margin-bottom: 0;
         letter-spacing: 0.5px;
     }
@@ -113,7 +115,7 @@
         justify-content: center;
         flex-wrap: nowrap;
         .nav-enlace--color{
-            color: #825b16;
+            color: $colorItemsFooter;
             text-shadow: 0px 0px 0px;
             margin-left: 2%;
         }
@@ -158,8 +160,8 @@
         display: grid;
         position: absolute;
         padding: 2%;
-        background-color: #ffffffbf;
-        box-shadow: 5px 5px 10px #7f7f7f;
+        background-color: $backgroundLight;
+        box-shadow: $shadowLight;
         height: 65%;
         width: 60%;
         text-shadow: 0 0 black;
@@ -182,8 +184,8 @@
     justify-items: center;
     align-items: center;
     .h1-menu {
-        background-color: #ffffffbf;
-        box-shadow: 5px 5px 10px #7f7f7f;
+        background-color: $backgroundLight;
+        box-shadow: $shadowLight;
         width: 90%;
         margin-top: 20px;
         padding: 5px;
@@ -195,8 +197,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #ffffffbf;
-    box-shadow: 5px 5px 10px #7f7f7f;
+    background-color: $backgroundLight;
+    box-shadow: $shadowLight;
     padding: 20px;
     margin: 20px;
     .entradas-menu {
@@ -209,8 +211,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #ffffffbf;
-    box-shadow: 5px 5px 10px #7f7f7f;
+    background-color: $backgroundLight;
+    box-shadow: $shadowLight;
     padding: 20px;
     margin: 20px;
     .principales-menu {
@@ -223,8 +225,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #ffffffbf;
-    box-shadow: 5px 5px 10px #7f7f7f;
+    background-color: $backgroundLight;
+    box-shadow: $shadowLight;
     padding: 20px;
     margin: 20px;
     .postres-menu {
@@ -233,8 +235,8 @@
     }
 }
 .div-bebidas {
-    background-color: #ffffffbf;
-    box-shadow: 5px 5px 10px #7f7f7f;
+    background-color: $backgroundLight;
+    box-shadow: $shadowLight;
     width: 90%;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -254,7 +256,7 @@
     height: 450px;
     object-fit: cover;
     object-position: center;
-    box-shadow: 5px 5px 5px #7f7f7f;
+    box-shadow: $shadowLight;
 }
 
 /* Acá comienza "Galeria" */
@@ -267,8 +269,8 @@
     justify-items: center;
     align-items: center;
     .h1-galeria {
-        background-color: #ffffffbf;
-        box-shadow: 5px 5px 10px #7f7f7f;
+        background-color: $backgroundLight;
+        box-shadow: $shadowLight;
         margin-top: 20px;
         margin-bottom: 20px;
         padding: 5px;
@@ -277,8 +279,8 @@
     }
 }
 .div-galeria {
-    background-color: #ffffffbf;
-    box-shadow: 5px 5px 10px #7f7f7f;
+    background-color: $backgroundLight;
+    box-shadow: $shadowLight;
     width: 90%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -322,7 +324,7 @@
     height: 300px;
     object-fit: cover;
     object-position: center;
-    box-shadow: 5px 5px 5px #7f7f7f;
+    box-shadow: $shadowLight;
     margin: 2%;
 }
 
@@ -354,8 +356,8 @@
             display: grid;
             position: absolute;
             padding: 10px;
-            background-color: #ffffffbf;
-            box-shadow: 5px 5px 10px #7f7f7f;
+            background-color: $backgroundLight;
+            box-shadow: $shadowLight;
             height: 60%;
             width: 60%;
             text-shadow: 0 0 black;
@@ -372,8 +374,8 @@
     display: grid;
     padding: 2%;
     width: 86%;
-    background-color: #ffffffbf;
-    box-shadow: 5px 5px 10px #7f7f7f;
+    background-color: $backgroundLight;
+    box-shadow: $shadowLight;
     font-size: 20px;
     text-align: center;
     margin-bottom: 3%;
@@ -383,7 +385,7 @@
     }
     .map {
         border: 0;
-        box-shadow: 5px 5px 5px #7f7f7f;
+        box-shadow: $shadowLight;
         width: 70%;
         height: 50vh;
         margin: 2%;
@@ -415,8 +417,8 @@
             display: grid;
             position: absolute;
             padding: 10px;
-            background-color: #ffffffcd;
-            box-shadow: 5px 5px 10px #7f7f7f;
+            background-color: $backgroundLight;
+            box-shadow: $shadowLight;
             height: 60%;
             width: 60%;
             text-shadow: 0 0 black;
