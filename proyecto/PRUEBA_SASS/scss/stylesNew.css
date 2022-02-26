@@ -144,7 +144,12 @@
 
 .footer .div-footer {
   width: 33.33%;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .footer .titina-foot {
@@ -156,7 +161,7 @@
   letter-spacing: 0.5px;
 }
 
-.footer .nav {
+.nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -171,14 +176,15 @@
       flex-wrap: nowrap;
 }
 
-.footer .nav .nav-enlace--color {
+.nav-enlace--color {
   color: #825b16;
   text-shadow: 0px 0px 0px;
   margin-left: 2%;
 }
 
 .nav-icon {
-  margin: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .main {
@@ -233,7 +239,6 @@
   background-color: #ffffffbf;
   -webkit-box-shadow: 5px 5px 10px #7f7f7f;
           box-shadow: 5px 5px 10px #7f7f7f;
-  height: 65%;
   width: 60%;
   text-shadow: 0 0 black;
   -ms-flex-line-pack: space-evenly;
@@ -357,8 +362,8 @@
 }
 
 .img-menu {
-  width: 450px;
-  height: 450px;
+  width: 40vw;
+  height: 40vw;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -461,8 +466,8 @@
 }
 
 .img-galeria {
-  width: 300px;
-  height: 300px;
+  width: 26vw;
+  height: 26vw;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -515,7 +520,6 @@
   background-color: #ffffffbf;
   -webkit-box-shadow: 5px 5px 10px #7f7f7f;
           box-shadow: 5px 5px 10px #7f7f7f;
-  height: 60%;
   width: 60%;
   text-shadow: 0 0 black;
   -ms-flex-line-pack: space-evenly;
@@ -528,7 +532,12 @@
 .section-contacto .div-contacto .div-formulario .formulario {
   display: -ms-grid;
   display: grid;
-  justify-items: end;
+  justify-items: center;
+}
+
+.section-contacto .div-contacto .div-formulario .formulario input {
+  text-align: left;
+  margin-bottom: 2%;
 }
 
 .section-llegar {
@@ -580,6 +589,7 @@
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  font-size: 90%;
 }
 
 .section-reservas .div-reservas .img-reservas {
@@ -597,11 +607,18 @@
   background-color: #ffffffbf;
   -webkit-box-shadow: 5px 5px 10px #7f7f7f;
           box-shadow: 5px 5px 10px #7f7f7f;
-  height: 60%;
   width: 60%;
   text-shadow: 0 0 black;
   -ms-flex-line-pack: space-evenly;
       align-content: space-evenly;
+}
+
+.section-reservas .div-reservas .div-form input {
+  margin-bottom: 1%;
+}
+
+.section-reservas .div-reservas .div-form select {
+  margin-bottom: 1%;
 }
 
 @media only screen and (min-width: 576px) and (max-width: 970px) {
@@ -671,8 +688,8 @@
     display: none;
   }
   .img-galeria {
-    width: 220px;
-    height: 220px;
+    width: 35vw;
+    height: 35vw;
   }
 }
 
@@ -794,8 +811,8 @@
         grid-template-areas: "img1"  "img2" "img3" "img4" "img5"  "img6" "img7" "img8" "img9";
   }
   .img-galeria {
-    height: 300px;
-    width: 300px;
+    height: 73vw;
+    width: 73vw;
   }
   /* Contacto */
   .section-contacto {
