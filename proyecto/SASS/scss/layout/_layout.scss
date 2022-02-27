@@ -1,0 +1,237 @@
+.body-home {
+    height: 100vh;
+}
+.grid-container {
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 60px 1fr 64px;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+        "header header header header header header"
+        "main main main main main main"
+        "footer footer footer footer footer footer";
+            @include tablet {
+                grid-template-rows: auto 1fr 64px;
+            }
+            @include mobile {
+                grid-template-rows: auto 1fr 64px;
+            }
+        .header-area {
+            grid-area: header;
+        }        
+        .main-area {
+            grid-area: main;
+        }        
+        .footer-area {
+            grid-area: footer;
+        }        
+}
+.header {
+    background-color: $colorHeader;
+    width: 100%;
+    height: 100%;
+    position: sticky;
+    top: 0;
+    @include tablet {
+        justify-content: unset;
+    }
+    @include mobile {
+        justify-content: unset;
+    }
+}
+.navbar{
+    padding: 0%;
+    .navbar-nav{
+        justify-content: space-evenly;
+        width: 100%;
+            @include tablet {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            @include mobile {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        .div-nav{
+            display: flex;
+            justify-content: space-evenly;
+            width: 33.33%;
+                @include tablet {
+                    display: flex;
+                    flex-direction: column;
+                }
+                @include mobile {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+        }
+    }
+    .nav-titina {
+        color: $colorNavsHeader;
+        font-size: 200%;
+        text-decoration: none;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        padding-top: 3px;
+        &:hover,
+        &:focus {
+            font-size: 220%;
+        }
+        @include tablet {
+            margin: 0%;
+        }
+        @include mobile {
+            margin: 0%;
+        }
+    }
+    .navbar-brand{
+        font-family: 'Bebas Neue';
+        font-weight: bold;
+        letter-spacing: 1.5px;
+        text-shadow: $shadowNavHeader;
+    }
+}
+.logo-mobile {
+    display: none;
+    @include tablet {
+        display: block;
+    }
+    @include mobile {
+        display: block;
+    }
+}
+.nav-enlace {
+    font-family: 'Bebas Neue';
+    color: $colorNavsHeader;
+    font-size: 160%;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.5s ease-out;
+    text-shadow: $shadowNavHeader;
+    letter-spacing: 0.5px;
+    .nav-enlace.active {
+        text-decoration: underline;
+    }
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+        text-decoration-color: $colorItemsFooter;
+        font-size: 170%;
+        color: $colorItemsFooter;
+    }
+}
+.footer {
+    background-color: $colorFooter;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 2px solid $colorItemsFooter;
+    .div-footer{
+        width: 33.33%;
+        display: flex;
+        justify-content: center;
+    }    
+    .titina-foot {
+        font-weight: bold;
+        font-size: 150%;
+        font-family: 'Bebas Neue';
+        color: $colorItemsFooter;
+        margin-bottom: 0;
+        letter-spacing: 0.5px;
+    }
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+        @include mobile {
+            flex-wrap: wrap;
+        }
+    
+}
+.nav-enlace--color{
+    color: $colorItemsFooter;
+    text-shadow: 0px 0px 0px;
+    margin-left: 2%;
+}
+.nav-icon {
+        margin-left: 10px;
+        margin-right: 10px;
+            @include mobile {
+                margin: 1px
+            }
+}
+.main {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, #f5efe5, #f8e9d0, #fae3bb, #fcdda6, #fed791, #f3d88c, #e7d888, #dad986, #c2de9a, #b1e0b0, #a8e0c3, #aaded2);
+        @include mobile {
+            margin: 20px 0;
+        }
+    h1 {
+        font-weight: bold;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 10px;
+    }
+}
+
+/* TABLET */
+
+@media only screen and (min-width: 576px) and (max-width: 970px) {
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+    .navbar-toggler {
+        color: rgba(0, 0, 0, .55);
+        border-color: rgba(0, 0, 0, .1);
+    }
+    .logo-desk {
+        display: none;
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+    .navbar-toggler {
+        color: rgba(0, 0, 0, .55);
+        border-color: rgba(0, 0, 0, .1);
+    }
+}
+
+/* MOBILE */
+
+@media only screen and (max-width: 575px) {
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+    .navbar-toggler {
+        color: rgba(0, 0, 0, .55);
+        border-color: rgba(0, 0, 0, .1);
+    }
+    .logo-desk {
+        display: none;
+    }
+    .enlace-footer {
+        flex-wrap: wrap;
+        font-size: 70%;
+    }
+    .nav-footer {
+        margin-left: 22px;
+    }
+}

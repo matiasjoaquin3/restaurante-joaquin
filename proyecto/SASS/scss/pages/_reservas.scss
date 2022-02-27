@@ -1,0 +1,42 @@
+.body-reservas {
+    height: 100vh;
+}
+.section-reservas {
+    width: 100%;
+    font-size: 23px;
+    text-align: center;
+        @include mobile {
+            font-size: 13px;
+        }
+    .div-reservas {
+        position: relative;
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        font-size: 90%;
+        .img-reservas {
+            width: 86%;
+            height: 77vh;
+            object-fit: cover;
+        }        
+        .div-form {
+            display: grid;
+            position: absolute;
+            padding: 10px;
+            background-color: map-get($styleBackLight, backgroung-color);
+            box-shadow: map-get($styleBackLight, box-shadow);
+            width: 60%;
+            text-shadow: 0 0 black;
+            align-content: space-evenly;
+            input{
+                margin-bottom: 1%;
+                width: 90%;
+            }
+            select{
+                margin-bottom: 1%;
+                width: 90%;
+            }
+        }
+    }
+}

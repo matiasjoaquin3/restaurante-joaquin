@@ -1,0 +1,34 @@
+.section-home {
+    width: 100%;
+}
+.div-bienvenidos {
+    font-size: 17px;
+    position: relative;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+        @include mobile {
+            font-size: 13px;
+        }
+    .img-home {
+        width: 86%;
+        height: 77vh;
+        object-fit: cover;
+    }
+    .texto-home {
+        display: grid;
+        position: absolute;
+        padding: 2%;
+        background-color: map-get($styleBackLight, backgroung-color);
+        box-shadow: map-get($styleBackLight, box-shadow);        
+        text-shadow: map-get($styleBackLight, text-shadow);
+        width: 60%;
+        align-content: space-evenly;
+        .p-home {
+            line-height: 1.5;
+            padding: 0px 10px;
+            text-align: center;
+        }
+    }
+}
