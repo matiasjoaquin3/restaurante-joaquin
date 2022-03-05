@@ -341,6 +341,7 @@
   text-align: center;
   padding-top: 10px;
   color: #ffffff;
+  margin-bottom: 2%;
 }
 
 .main h2 {
@@ -736,6 +737,10 @@
   margin: 2%;
 }
 
+.img-galeria:hover {
+  width: 100%;
+}
+
 @media only screen and (min-width: 576px) and (max-width: 970px) {
   .img-galeria {
     width: 35vw;
@@ -791,7 +796,7 @@
 
 .section-contacto {
   width: 100%;
-  font-size: 20px;
+  font-size: 115%;
   margin: 3%;
 }
 
@@ -833,20 +838,30 @@
   text-shadow: 0 0 black;
   -ms-flex-line-pack: space-evenly;
       align-content: space-evenly;
+}
+
+.section-contacto .div-contacto .div-formulario .blank-space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.section-contacto .div-contacto .div-formulario .formulario {
-  display: -ms-grid;
-  display: grid;
-  justify-items: center;
+.section-contacto .div-contacto .div-formulario input {
+  margin-bottom: 2%;
+  width: 90%;
 }
 
-.section-contacto .div-contacto .div-formulario .formulario input {
-  text-align: left;
+.section-contacto .div-contacto .div-formulario textarea {
+  width: 90%;
   margin-bottom: 2%;
+}
+
+.section-contacto .div-contacto .div-formulario .enviar {
+  background-color: #898989;
+  border-radius: 30px;
 }
 
 .section-llegar {
@@ -928,12 +943,17 @@
 }
 
 .section-reservas .div-reservas .div-form input {
-  margin-bottom: 1%;
+  margin-bottom: 2%;
   width: 90%;
 }
 
 .section-reservas .div-reservas .div-form select {
-  margin-bottom: 1%;
+  margin-bottom: 2%;
   width: 90%;
+}
+
+.section-reservas .div-reservas .div-form .enviar {
+  background-color: #898989;
+  border-radius: 30px;
 }
 /*# sourceMappingURL=main.css.map */

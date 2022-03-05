@@ -1,65 +1,66 @@
 .section-home {
-    width: 100%;
+  width: 100%;
 }
 .div-bienvenidos {
-    font-size: 17px;
-    position: relative;
-    display: grid;
-    justify-items: center;
-    align-items: center;
-    width: 100%;
-        @include mobile {
-            font-size: 13px;
-        }
-    .img-home {
-        width: 86%;
-        height: 77vh;
-        object-fit: cover;
-    }
-    .texto-home {
-        display: grid;
-        position: absolute;
-        padding: 2%;
-        background-color: map-get($styleBackLight, backgroung-color);
-        box-shadow: map-get($styleBackLight, box-shadow);        
-        text-shadow: map-get($styleBackLight, text-shadow);
-        width: 60%;
-        align-content: space-evenly;
-        .p-home {
-            line-height: 1.5;
-            padding: 0px 10px;
-            text-align: center;
-        }
-    }
+  font-size: 17px;
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+      @include mobile {
+          font-size: 13px;
+      }
+  .img-home {
+      width: 86%;
+      height: 77vh;
+      object-fit: cover;
+  }
+  .texto-home {
+      display: grid;
+      position: absolute;
+      padding: 2%;
+      background-color: map-get($styleBackLight, backgroung-color);
+      box-shadow: map-get($styleBackLight, box-shadow);        
+      text-shadow: map-get($styleBackLight, text-shadow);
+      width: 60%;
+      align-content: space-evenly;
+      .p-home {
+          line-height: 1.5;
+          padding: 0px 10px;
+          text-align: center;
+      }
+  }
 }
-
 .scale-in-center {
-	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
- @-webkit-keyframes scale-in-center {
-    0% {
-      -webkit-transform: scale(0);
-              transform: scale(0);
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      opacity: 1;
-    }
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
   }
-  @keyframes scale-in-center {
-    0% {
-      -webkit-transform: scale(0);
-              transform: scale(0);
-      opacity: 1;
-    }
-    100% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-      opacity: 1;
-    }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
   }
-  
+}
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
