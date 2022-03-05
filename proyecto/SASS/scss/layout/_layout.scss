@@ -74,6 +74,7 @@
         }
     }
     .nav-titina {
+        font-family: 'Playfair Display', serif;
         color: $colorNavsHeader;
         font-size: 200%;
         text-decoration: none;
@@ -92,7 +93,7 @@
         }
     }
     .navbar-brand{
-        font-family: 'Bebas Neue';
+        font-family: 'Playfair Display', serif;
         font-weight: bold;
         letter-spacing: 1.5px;
         text-shadow: $shadowNavHeader;
@@ -144,7 +145,7 @@
     .titina-foot {
         font-weight: bold;
         font-size: 150%;
-        font-family: 'Bebas Neue';
+        font-family: 'Playfair Display', serif;
         color: $colorItemsFooter;
         margin-bottom: 0;
         letter-spacing: 0.5px;
@@ -178,15 +179,31 @@
     align-items: center;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to bottom, #f5efe5, #f8e9d0, #fae3bb, #fcdda6, #fed791, #f3d88c, #e7d888, #dad986, #c2de9a, #b1e0b0, #a8e0c3, #aaded2);
+    background-image: radial-gradient(circle, #301717, #421c19, #54231a, #642a18, #743313, #733314, #713214, #703215, #5d291a, #49211b, #341b1a, #1e1515);
         @include mobile {
             margin: 20px 0;
         }
     h1 {
+        font-family: 'Playfair Display', serif;
         font-weight: bold;
         font-size: 30px;
         text-align: center;
         padding-top: 10px;
+        color: #ffffff;
+    }
+    h2 {
+        font-family: 'Playfair Display', serif; 
+        font-weight: bold;
+        color: #ffffff;
+    }
+    h3{
+        color: #ffffff;
+    }
+    p {
+        color: #ffffff;
+    }
+    span {
+        color: #ffffff;
     }
 }
 
