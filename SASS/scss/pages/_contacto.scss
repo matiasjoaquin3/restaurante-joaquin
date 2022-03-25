@@ -45,8 +45,12 @@
                 margin-bottom: 2%;
             }
             .enviar{
+                width: 50%;
                 background-color: rgb(137, 137, 137);
                 border-radius: 30px;
+                &:hover {
+                    background-color: rgb(204, 173, 86);
+                }
             }
         }
     }

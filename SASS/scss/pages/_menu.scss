@@ -103,6 +103,10 @@
     object-fit: cover;
     object-position: center;
     box-shadow: map-get($styleBackLight, box-shadow);
+    transition: all 0.3s ease;
+    &:hover {
+        transform: scale(1.1)
+    }
 
     @include mobile {
         width: 100%;
